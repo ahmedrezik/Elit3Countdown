@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  font-size: 50px;
+  color: white;
+  
+
+}
+p1{
+color:black;}
+
+#counter{
+font-size: 90px;
+  padding: 70px 0;
+  color: white;
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+p2{
+color: clear;
+opacity: 0.0;
+}
+</style>
+</head>
+<body background= "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2019-09-09-at-12-23-32-pm-1568046253.png?crop=1.00xw:0.856xh;0,0.0436xh&resize=480:*">
+
+<div>
+<p> Elit3 Countdown </p>
+</div>
+<div> <p2>
+fffff
+ffff
+</p2> </div>
+<div> <p2>
+fffff
+ffff
+</p2> </div>
+<p id="counter"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 13, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("counter").innerHTML = "ELIT3";
+  }
+}, 1000);
+</script>
+
+<div class="footer">
+  <p1>An Ahmed Abdulkareem Production ® </p1>
+  <p2>   fff  </p2>
+  <a href="https://www.instagram.com/ahmed_abdulkareem7/">
+  Instagram </a>
+  <p2>   fff  </p2>
+  <a href="https://twitter.com/ahmedsurvival"> Twitter</a>
+</div>
+</body>
+
+</html>
+
